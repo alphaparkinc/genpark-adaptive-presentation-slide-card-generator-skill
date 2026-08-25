@@ -1,0 +1,38 @@
+{
+  "name": "genpark-adaptive-presentation-slide-card-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Adaptive presentation slide generator transforming long-form briefs into interactive responsive card decks.",
+  "author": "genpark",
+  "category": "presentation-ai",
+  "tags": [
+    "presentation-cards",
+    "gamma-app",
+    "slide-generator",
+    "pitch-deck",
+    "interactive-cards"
+  ],
+  "inputs": {
+    "pitch_topic": {
+      "type": "string"
+    },
+    "target_slide_cards": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "deck_card_id": {
+      "type": "string"
+    },
+    "slide_cards_generated_count": {
+      "type": "integer"
+    },
+    "one_click_web_deck_url": {
+      "type": "string"
+    },
+    "pptx_export_bundle_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
